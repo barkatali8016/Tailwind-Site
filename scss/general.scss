@@ -1,0 +1,452 @@
+// Inter Font from Google Font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* ******************************* */
+/* GENERAL*/
+/* ******************************* */
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+.heading-primary {
+  color: #090e34;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2.4rem;
+}
+.heading-quaternary {
+  font-size: 2rem;
+  color: #090e34;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+}
+.section-secondary-text {
+  color: #637381;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+.section-sub-heading {
+  color: #3056d3;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.text-center {
+  text-align: center;
+}
+.btn {
+  border: 0;
+  background-color: #e5e7eb;
+  color: #000;
+  font-size: 1.8rem;
+  padding: 1.6rem 3rem;
+  border-radius: 9px;
+  cursor: pointer;
+}
+/* ******************************* */
+/* SECTION HEADER*/
+/* ******************************* */
+.section-header {
+  background-color: #3056d3;
+  height: 8rem;
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
+  .logo-holder {
+    display: block;
+  }
+  .logo-img {
+    width: 50%;
+    height: auto;
+  }
+  .main-nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 4.8rem;
+      font-size: 1.6rem;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: #fff;
+    }
+    a:active,
+    a:hover {
+      color: #e4e4e4;
+    }
+  }
+  .head-action-btn {
+    display: flex;
+    gap: 4.8rem;
+    font-size: 1.6rem;
+    justify-self: end;
+    align-items: center;
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+    a:active,
+    a:hover {
+      color: #e4e4e4;
+    }
+    .signup-btn:link,
+    .signup-btn:visited {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 1.2rem 2.4rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .signup-btn:active,
+    .signup-btn:hover {
+      color: #000;
+      background-color: #fff;
+    }
+  }
+}
+
+/* ******************************* */
+/* SECTION HEADER*/
+/* ******************************* */
+.section-hero {
+  background-color: #3056d3;
+  padding-top: 4.8rem;
+
+  .hero-text-holder {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .hero-heading-text {
+    color: #e5e7eb;
+    margin-bottom: 4.8rem;
+  }
+  .hero-text-secondary {
+    text-align: center;
+    margin-bottom: 3.2rem;
+    color: #e4e4e4;
+  }
+  .hero-btn-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.6rem;
+  }
+  .hero-btn-primary:hover,
+  .hero-btn-primary:active {
+    color: #3056d3;
+  }
+  .hero-btn-secondary:hover,
+  .hero-btn-secondary:active {
+    color: #e4e4e4;
+  }
+  .hero-btn-secondary {
+    background-color: unset;
+    color: #fff;
+  }
+  .hero-img-section {
+    height: auto;
+    position: relative;
+  }
+  .hero-brand-holder {
+    text-align: center;
+    margin-bottom: 4.8rem;
+    img {
+      width: 30%;
+      opacity: 0.5;
+      transition: all 0.3s ease;
+    }
+    img:hover {
+      opacity: 1;
+    }
+  }
+
+  .hero-img-holder {
+    width: 80%;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+      height: auto;
+      margin-bottom: -0.3rem;
+    }
+  }
+  .hero-img-dotted-box-right,
+  .hero-img-dotted-box-left {
+    height: 10rem;
+    width: 10rem;
+    background-color: #fff;
+    -webkit-mask: url("../images/team/dotted-shape.svg") no-repeat center;
+    mask: url("../images/team/dotted-shape.svg") no-repeat center;
+    position: absolute;
+  }
+  .hero-img-dotted-box-left {
+    bottom: -0.8rem;
+    left: 7.5rem;
+  }
+  .hero-img-dotted-box-right {
+    top: -2.7rem;
+    right: 8.5rem;
+  }
+}
+
+/* ******************************* */
+/* SECTION Features*/
+/* ******************************* */
+.section-features {
+  padding-top: 9.6rem;
+  .feature-text-holder {
+    width: 54%;
+    margin-bottom: 6.4rem;
+  }
+  .feature-box-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+    margin-bottom: 9.6rem;
+  }
+  .feature-icon-holder {
+    position: relative;
+    margin-bottom: 3.2rem;
+  }
+  .feature-icon-round {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 20px;
+    transform: rotate(25deg);
+    background-color: rgba(48, 86, 211, 0.2);
+    transition: all 0.3s ease;
+    // z-index: 100;
+  }
+  .feature-icon-holder:hover {
+    .feature-icon-round {
+      transform: rotate(45deg);
+    }
+  }
+  .feature-icon {
+    font-size: 3.6rem;
+    background-color: #3056d3;
+    padding: 1.8rem;
+    border-radius: 20px;
+    color: #fff;
+  }
+  .feature-text {
+    font-size: 1.6rem;
+    color: #637381;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+  }
+  .link-lern-more:link,
+  .link-lern-more:visited {
+    font-size: 1.6rem;
+    color: #637381;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .link-lern-more:hover,
+  .link-lern-more:active {
+    color: #3056d3;
+  }
+}
+
+/* ******************************* */
+/* SECTION ABOUT US*/
+/* ******************************* */
+.about-us {
+  background-color: rgb(243, 244, 254);
+  padding: 9.6rem 0;
+  .about-us-box {
+    display: grid;
+    grid-template-columns: 6.5fr 3.5fr;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+  }
+  .about-us-text-holder {
+    padding: 6.4rem;
+  }
+  .aboutus-label {
+    font-size: 1.4rem;
+    background-color: #3056d3;
+    padding: 1rem 1.8rem;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 3.2rem;
+  }
+  .aboutus-text {
+    font-size: 1.6rem;
+    color: #637381;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+  .btn-lern-more {
+    background-color: #3056d3;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  .btn-lern-more:hover,
+  .btn-lern-more:active {
+    background-color: #4567d7;
+    box-shadow: inset 0 1px 1px 1px #3056d3;
+  }
+}
+
+/* ******************************* */
+/* SECTION ABOUT US*/
+/* ******************************* */
+.section-pricing {
+  padding-top: 9.6rem;
+  .pricing-text-section {
+    width: 54%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 7.4rem;
+  }
+  .pricing-card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+  }
+  .pricing-card {
+    padding: 6.4rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 9px;
+  }
+  .card-start-form {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    text-transform: uppercase;
+  }
+  .price-text {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #3056d3;
+    margin-bottom: 4.4rem;
+  }
+  .pricing-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    margin-bottom: 3.6rem;
+    color: #637381;
+    li {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+  }
+
+  .btn-purchase {
+    border-radius: 100px;
+    padding: 1.8rem 4.4rem;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    color: #3056d3;
+    transition: all 0.3s ease;
+  }
+  .btn-purchase:hover {
+    color: #fff;
+    background-color: #3056d3;
+  }
+  .pricing-card:nth-child(even) {
+    background-color: rgb(48, 86, 211);
+    background-image: linear-gradient(rgb(48, 86, 211), rgb(23, 155, 238));
+    color: #fff;
+    transform: scaleY(1.1);
+    .price-text {
+      color: #fff;
+    }
+    .pricing-features {
+      color: #fff;
+    }
+    .btn-purchase:hover {
+      color: #fff;
+      background-color: #090e34;
+      border: 1px solid #090e34;
+    }
+  }
+  .btn-pupular {
+    background-color: #fff;
+    border-radius: 100px;
+    cursor: text;
+    padding: 1.2rem 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #3056d3;
+  }
+}
+
+body:last-child {
+  margin-bottom: 500px;
+}
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default:400
+Medium:500
+Semi-bold:600
+Bold:700
+
+- Line Height
+default:1
+Small:1.05
+Mediul:1.2
+Paragraph default1.6
+
+- Letter spacing
+negative value: -0.5px
+positive value: 0.75px
+
+--- 02 COLORS
+- Primary: #3056d3;
+- Text Color : #e5e7eb;
+- heading Color :  #090E34
+- gray Text Color : #e4e4e4
+
+- Tints: 
+#fae5d3;
+#fae5d3;
+- Shades:
+- Accents: 
+- Grays: 
+#555
+
+--- 03 SHADOWS
+--- 04 BORDER-REDIUS
+Default: 9px
+
+--- 05 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
