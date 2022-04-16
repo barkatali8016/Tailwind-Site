@@ -55,6 +55,10 @@ body {
   text-align: center;
 }
 
+.d-none {
+  display: none;
+}
+
 .btn {
   border: 0;
   background-color: #e5e7eb;
@@ -392,6 +396,7 @@ body {
 /* ******************************* */
 .section-pricing {
   padding-top: 9.6rem;
+  margin-bottom: 12.8rem;
 }
 
 .section-pricing .pricing-text-section {
@@ -496,6 +501,267 @@ body {
   font-weight: 500;
   margin-bottom: 2rem;
   color: #3056d3;
+}
+
+/* ******************************* */
+/* SECTION FAQ*/
+/* ******************************* */
+.section-faq {
+  padding: 9.6rem 0;
+  background-color: #f3f4ff;
+  background-image: linear-gradient(35deg, #f3f4ff 51%, #dae0f9 51%, #f3f4ff 100%);
+  position: relative;
+}
+
+.section-faq .pricing-text-section {
+  width: 54%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 7.4rem;
+}
+
+.section-faq .faq-collaps-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 4.4rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.section-faq .faq-card {
+  background-color: #fff;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 0 0.5px -1px rgba(0, 0, 0, 0.603);
+          box-shadow: 0 0 0.5px -1px rgba(0, 0, 0, 0.603);
+  padding: 3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.section-faq .faq-card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-faq .cart-icon-btn {
+  padding: 0.6rem 0.8rem;
+  text-align: center;
+  background-color: #f5f6fc;
+}
+
+.section-faq .cart-icon-up,
+.section-faq .cart-icon-down {
+  font-size: 2.4rem;
+  color: #3056d3;
+  font-weight: 700;
+}
+
+.section-faq .faq-card-head-text {
+  font-size: 1.8rem;
+  color: #090e34;
+}
+
+.section-faq .faq-cart-body {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: -1000px;
+  z-index: -1;
+}
+
+.section-faq .expand .faq-cart-body {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  position: unset;
+  top: unset;
+  z-index: unset;
+}
+
+.section-faq .expand .faq-card-head {
+  margin-bottom: 1.2rem;
+}
+
+.section-faq .faq-cart-text {
+  font-size: 1.6rem;
+  color: #637381;
+  line-height: 1.8;
+  margin-left: 6rem;
+}
+
+/* ******************************* */
+/* SECTION FAQ*/
+/* ******************************* */
+.section-testimonials {
+  padding: 9.6rem 0;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), to(#f1f4fe));
+  background-image: linear-gradient(to bottom, #fff 50%, #f1f4fe);
+}
+
+.section-testimonials .testimonials-text-section {
+  width: 54%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 9.6rem;
+}
+
+.section-testimonials .testimonials-cards-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5.2rem;
+}
+
+.section-testimonials .testimonial-card {
+  padding: 3.6rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0.5px 0 0 rgba(241, 244, 254, 0.5);
+          box-shadow: 0 0.5px 0 0 rgba(241, 244, 254, 0.5);
+}
+
+.section-testimonials .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.section-testimonials .ratings-star {
+  font-size: 1.6rem;
+  fill: #fbb040;
+}
+
+.section-testimonials .quote {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #637381;
+  margin-bottom: 1.6rem;
+}
+
+.section-testimonials .author-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-testimonials .author-box img {
+  width: 6rem;
+}
+
+.section-testimonials .author-text figcaption {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.section-testimonials .author-text span {
+  color: #637381;
+  font-size: 1.2rem;
+}
+
+.section-testimonials .someof-client {
+  font-size: 1.2rem;
+  color: #637381;
+  margin-bottom: 3rem;
+}
+
+.section-testimonials .brandimg-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-testimonials .brandimg-holder img {
+  height: 3.2rem;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.section-testimonials .brandimg-holder img:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+  opacity: 1;
+}
+
+.section-our-team {
+  padding: 9.6rem 0;
+  background-color: #f1f4fe;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f1f4fe), to(#fff));
+  background-image: linear-gradient(to bottom, #f1f4fe 1%, #fff);
+}
+
+.section-our-team .our-team-text-section {
+  width: 54%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 9.6rem;
+}
+
+.section-our-team .team-members {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  text-align: center;
+}
+
+.section-our-team .team-img-holder {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 2rem;
+}
+
+.section-our-team .team-mem-img {
+  width: 60%;
+  z-index: 1;
+}
+
+.section-our-team .dotted-shape-team {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  z-index: -1;
+}
+
+.section-our-team .exposure-shape {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
 }
 
 body:last-child {

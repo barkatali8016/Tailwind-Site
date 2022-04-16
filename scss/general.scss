@@ -48,6 +48,9 @@ body {
 .text-center {
   text-align: center;
 }
+.d-none {
+  display: none;
+}
 .btn {
   border: 0;
   background-color: #e5e7eb;
@@ -320,6 +323,7 @@ body {
 /* ******************************* */
 .section-pricing {
   padding-top: 9.6rem;
+  margin-bottom: 12.8rem;
   .pricing-text-section {
     width: 54%;
     margin: 0 auto;
@@ -400,6 +404,216 @@ body {
     font-weight: 500;
     margin-bottom: 2rem;
     color: #3056d3;
+  }
+}
+
+/* ******************************* */
+/* SECTION FAQ*/
+/* ******************************* */
+.section-faq {
+  padding: 9.6rem 0;
+  background-color: #f3f4ff;
+  background-image: linear-gradient(
+    35deg,
+    #f3f4ff 51%,
+    #dae0f9 51%,
+    #f3f4ff 100%
+  );
+  position: relative;
+  .pricing-text-section {
+    width: 54%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 7.4rem;
+  }
+  .faq-collaps-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 4.4rem;
+    align-items: start;
+  }
+  .faq-card {
+    background-color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 0 0.5px -1px rgba(0, 0, 0, 0.603);
+    padding: 3rem;
+    transition: all 0.5s ease;
+  }
+  .faq-card-head {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+  }
+  .cart-icon-btn {
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    background-color: #f5f6fc;
+  }
+  .cart-icon-up,
+  .cart-icon-down {
+    font-size: 2.4rem;
+    color: #3056d3;
+    font-weight: 700;
+  }
+
+  .faq-card-head-text {
+    font-size: 1.8rem;
+    color: #090e34;
+  }
+  .faq-cart-body {
+    // display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: -1000px;
+    z-index: -1;
+  }
+  .expand {
+    .faq-cart-body {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+      position: unset;
+      top: unset;
+      z-index: unset;
+    }
+    .faq-card-head {
+      margin-bottom: 1.2rem;
+    }
+  }
+  .faq-cart-text {
+    font-size: 1.6rem;
+    color: #637381;
+    line-height: 1.8;
+    margin-left: 6rem;
+  }
+}
+
+/* ******************************* */
+/* SECTION FAQ*/
+/* ******************************* */
+.section-testimonials {
+  padding: 9.6rem 0;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, #fff 50%, #f1f4fe);
+  .testimonials-text-section {
+    width: 54%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 9.6rem;
+  }
+  .testimonials-cards-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5.2rem;
+  }
+  .testimonial-card {
+    padding: 3.6rem;
+    background-color: #fff;
+    box-shadow: 0 0.5px 0 0 rgba(241, 244, 254, 0.5);
+  }
+  .ratings {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .ratings-star {
+    font-size: 1.6rem;
+    fill: #fbb040;
+  }
+  .quote {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #637381;
+    margin-bottom: 1.6rem;
+  }
+  .author-box {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+  .author-box {
+    img {
+      width: 6rem;
+    }
+  }
+  .author-text {
+    figcaption {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+    span {
+      color: #637381;
+      font-size: 1.2rem;
+    }
+  }
+
+  .someof-client {
+    font-size: 1.2rem;
+    color: #637381;
+    margin-bottom: 3rem;
+  }
+  .brandimg-holder {
+    display: flex;
+    gap: 4.4rem;
+    align-items: center;
+    img {
+      height: 3.2rem;
+      filter: brightness(0);
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+    img:hover {
+      filter: brightness(0.8);
+      opacity: 1;
+    }
+  }
+}
+.section-our-team {
+  padding: 9.6rem 0;
+  background-color: #f1f4fe;
+  background-image: linear-gradient(to bottom, #f1f4fe 1%, #fff);
+  .our-team-text-section {
+    width: 54%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 9.6rem;
+  }
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    text-align: center;
+    // align-items: center;
+    // justify-content: center;
+  }
+  .team-img-holder {
+    position: relative;
+    // background-color: #fbb040;
+    z-index: 10;
+    margin-bottom: 2rem;
+  }
+  .team-mem-img {
+    width: 60%;
+    z-index: 1;
+  }
+  .dotted-shape-team {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    z-index: -1;
+  }
+  .exposure-shape {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
   }
 }
 
